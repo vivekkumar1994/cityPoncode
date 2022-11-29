@@ -10,8 +10,11 @@ const apiData = require("./data.json")
 
 require('dotenv').config();
 
+app.get("/",(req,res) =>{
+    res.send("i am live");
 
-app.get("service",(req,res) =>{
+});
+app.get("/service",(req,res) =>{
     res.send(apiData);
 
 });
