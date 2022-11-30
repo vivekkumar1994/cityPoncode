@@ -5,7 +5,8 @@ const app=express();
 app.use(cors());
 const port = process.env.Port || 3000;
 
-const apiData = require("./data.js")
+const apiData = require("./data.json");
+
 
 
 require('dotenv').config();
